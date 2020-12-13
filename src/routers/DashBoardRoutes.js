@@ -7,10 +7,10 @@ import { SearchScreen } from '../componentes/search/SearchScreen';
 import { HeroScreen } from '../componentes/ui/heroes/HeroScreen'
 import { Navbar } from '../componentes/ui/Navbar'
 
-export const DashBoardRoutes = () => {
+export const DashBoardRoutes = ({history}) => {
     return (
         <Fragment>
-            <Navbar />
+            <Navbar/>
             <div className='container mt-2'>
                 <Switch>
                     <Route exact path="/marvel" component={MarvelScreen} />
