@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <SearchScreen /> debe de mostrar a batman y el input con el valor del query string 1`] = `ReactWrapper {}`;
+
+exports[`Pruebas en el componente <SearchScreen /> debe mostrarse el componente con valores por defecto 1`] = `ReactWrapper {}`;

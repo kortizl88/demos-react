@@ -21,7 +21,13 @@ export const HeroScreen = ({history}) => {
         characters } = hero;
 
     const handleReturn = () =>{
-        history.goBack();
+        if(history.length <= 2)
+        {
+            history.push("/");
+        }else{
+            history.goBack();
+        }
+        
     }
         
     return (
