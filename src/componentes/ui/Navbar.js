@@ -55,6 +55,14 @@ export const Navbar = () => {
                     >
                         Buscar
                     </NavLink>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/radios"
+                    >
+                        radios
+                    </NavLink>
                 </div>
             </div>
 
