@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Pruebas en <HeroScreen /> Debe mostrarse el componente correctamente 1`] = `ReactWrapper {}`;
-
-exports[`Pruebas en <HeroScreen /> Debe mostrarse el componente redirect si no hay argumentos en el URL 1`] = `ReactWrapper {}`;

@@ -63,6 +63,14 @@ export const Navbar = () => {
                     >
                         radios
                     </NavLink>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/numeros"
+                    >
+                        numeros
+                    </NavLink>
                 </div>
             </div>
 

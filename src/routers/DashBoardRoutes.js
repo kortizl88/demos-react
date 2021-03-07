@@ -7,6 +7,7 @@ import { SearchScreen } from '../componentes/search/SearchScreen';
 import { HeroScreen } from '../componentes/ui/heroes/HeroScreen'
 import { Navbar } from '../componentes/ui/Navbar'
 import { TestRadio } from '../componentes/pruebas/TestRadio/TestRadio';
+import { InputNumerico } from '../componentes/pruebas/TestRadio/InputNumerico';
 
 export const DashBoardRoutes = ({history}) => {
     return (
@@ -19,6 +20,7 @@ export const DashBoardRoutes = ({history}) => {
                     <Route exact path="/dc" component={DcScreen} />
                     <Route exact path="/buscar" component={SearchScreen} />
                     <Route exact path="/radios" component={TestRadio} />
+                    <Route exact path="/numeros" component={InputNumerico} />
 
                     <Redirect to="/marvel" />
                 </Switch>
