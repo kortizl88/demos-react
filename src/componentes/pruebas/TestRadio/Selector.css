@@ -1,0 +1,48 @@
+.selector{
+    width: 210px;
+    position: relative;
+}
+.titulo{
+    font-weight: bold;
+}
+.control{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+.flechita{
+    width: 20px;
+}
+.opcion-seleccionada{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+.borde-inferior{
+    height: 7px;
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+}
+.opciones{
+    box-shadow: #ccc 1px 1px 1px 1px;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+.opcion{
+    height: 48px;
+    padding: 13px;
+    border-bottom: 1px solid #ccc;
+}
+.opcion:hover{
+    cursor: pointer;
+    background-color: #b3f2b1;
+}
+
+.opcion.marcada{
+    font-weight: bold;
+}

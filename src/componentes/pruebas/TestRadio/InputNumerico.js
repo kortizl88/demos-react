@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import NumberFormat from 'react-number-format';
+import { Selector } from './Selector';
 
 export const InputNumerico = () => {
     const totalVenta = 7867;
@@ -7,6 +8,11 @@ export const InputNumerico = () => {
         monto: 1500,
         porcentaje: parseInt(( 1500 / totalVenta ) * 100)
     })
+
+    const opciones = [{valor: '1', texto: 'valor 1' },
+    {valor: '2', texto: 'valor 2' },
+    {valor: '3', texto: 'valor 3' },
+    {valor: '4', texto: 'valor 4' }];
 
     const calcular = (e, tipo) => {
         if(e.key === 'Enter'){
@@ -42,7 +48,19 @@ export const InputNumerico = () => {
                 value={enganche.porcentaje}
                 onChange={ e => setEnganche( { ...enganche, porcentaje: e.target.value  } ) }
                 onKeyPress={(e) => calcular(e, 2)}
-                suffix={'%'} />            
+                suffix={'%'} />   
+
+
+
+                <br/>
+                <br/>
+                <br/>
+
+                <Selector titulo='Periodicdad:' textoAyuda='Periodicidad' listaOpciones={opciones} eventoCambio={(opcion) => console.log({opcion})}/>         
+                <br/>
+                <Selector titulo='Periodicdad:' textoAyuda='Periodicidad' listaOpciones={opciones} eventoCambio={(opcion) => console.log({opcion})}/>         
+                <br/>
+                <Selector titulo='Periodicdad:' textoAyuda='Periodicidad' listaOpciones={opciones} eventoCambio={(opcion) => console.log({opcion})}/>         
         </div>
     )
 }
