@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <FormularioNombre /> Debe mostrar correctamente el componente 1`] = `ReactWrapper {}`;

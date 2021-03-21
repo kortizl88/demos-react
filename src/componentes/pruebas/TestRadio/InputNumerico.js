@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import NumberFormat from 'react-number-format';
 import { Selector } from './Selector';
+import { FormularioNombre } from './FormularioNombre';
+import { Menu } from './Menu';
 
 export const InputNumerico = () => {
     const totalVenta = 7867;
@@ -32,6 +34,9 @@ export const InputNumerico = () => {
         }
     }
 
+    const estadoNom= { nombre: '', paterno: '',materno: ''};
+    const [estadoNombre, setEstadoNombre] = useState(estadoNom);
+
     return (
         <div>
             <p>Numero</p>
@@ -61,6 +66,14 @@ export const InputNumerico = () => {
                 <Selector titulo='Periodicdad:' textoAyuda='Periodicidad' listaOpciones={opciones} eventoCambio={(opcion) => console.log({opcion})}/>         
                 <br/>
                 <Selector titulo='Periodicdad:' textoAyuda='Periodicidad' listaOpciones={opciones} eventoCambio={(opcion) => console.log({opcion})}/>         
+
+                <br/>
+                <FormularioNombre estado={estadoNombre} eventoCambio={setEstadoNombre} />
+
+                <br/>
+                <br/>
+
+                <Menu />
         </div>
     )
 }

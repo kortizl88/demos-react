@@ -1,0 +1,41 @@
+.formulario-nombre{
+  display: flex;
+  .campo{
+    width: 311px;
+    margin-right: 18px;
+    input{
+      width: 100%;
+      outline: none;
+      border: none;
+      &::placeholder{
+        color: black;
+        opacity: 1;
+      }
+      &:disabled{
+        &::placeholder{
+          color: #CCCDCE;
+        }
+      }
+    }
+    .borde-inferior{
+      height: 7px;
+      width: 100%;
+      border: 2px solid black;
+      border-top: none;
+    }
+    &.inactivo{
+      .borde-inferior{
+        border-color: #CCCDCE;
+      }
+    }
+    .verificador{
+      margin-top: 10px;
+    }
+  }
+}
+
+
+
+
+
+

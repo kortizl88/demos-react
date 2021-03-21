@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
   "_comment": "This config was generated using 'stryker init'. Please see the guide for more information: https://stryker-mutator.io/docs/stryker/guides/react",
   "testRunner": "jest",
-  "mutate": ["src/componentes/pruebas/TestRadio/InputNumerico.js"],
+  "mutate": ["src/componentes/pruebas/TestRadio/Menu.js"],
   "reporters": [
     "progress",
     "clear-text",

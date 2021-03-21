@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Menu /> Debe mostrar el menu 1`] = `ReactWrapper {}`;

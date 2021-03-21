@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <CasillaConfirmacion /> Debe mostrar correctamente el componente 1`] = `ReactWrapper {}`;
+
+exports[`Pruebas en <CasillaConfirmacion /> Debe mostrar inactivo el componente cuando se indique 1`] = `ReactWrapper {}`;

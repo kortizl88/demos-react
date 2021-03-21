@@ -1,0 +1,58 @@
+.casilla-confirmacion{
+    .etiqueta{
+        position: relative;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 14px;
+        padding-left: 20px;
+        &.inactivo{
+            color:#CCCDCE;
+        }
+        input.control {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+        .indicador{
+            position: absolute;
+            top: 1px;
+            left: 0;
+            height: 12px;
+            width: 12px;
+            margin-right: 8px;
+            background-color: #eee;
+            border: 1px solid black;
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+        }
+
+        input.control:checked ~ .indicador {
+            background-color: #006341;
+        }
+
+        input.control:checked ~ .indicador:after {
+            display: block;
+        }
+
+        .indicador:after {
+            left: 3px;
+            top: 0px;
+            width: 4px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(35deg);
+          }
+
+        input.control:disabled ~ .indicador {
+            background-color: #fff;
+            border-color:#CCCDCE;
+        }
+
+    }
+}
